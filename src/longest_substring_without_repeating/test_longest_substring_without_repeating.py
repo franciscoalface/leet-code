@@ -8,7 +8,8 @@ from longest_substring_without_repeating import Solution
         ('abcabcbb', 3),
         ('bbbbb', 1),
         ('pwwkew', 3),
-        ('', 0)
+        ('', 0),
+        ('fivestarreview', 8)
     ]
 )
 def test_move_zeros(s, expected):
