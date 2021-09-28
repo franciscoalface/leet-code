@@ -1,5 +1,5 @@
 import pytest
-from two_sums import two_sums
+from two_sum import two_sum
 
 
 @pytest.mark.parametrize(
@@ -10,5 +10,5 @@ from two_sums import two_sums
         ([3, 3], 6, [0, 1]),
     ]
 )
-def test_two_sums(nums, target, expected):
-    assert expected == two_sums(nums, target)
+def test_two_sum(nums, target, expected):
+    assert expected == two_sum(nums, target)
