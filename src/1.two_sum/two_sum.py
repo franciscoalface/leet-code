@@ -1,4 +1,4 @@
-'''
+"""
 Given an array of integers nums and an integer target, return indices of the
 two numbers such that they add up to target.
 You may assume that each input would have exactly one solution, and you may
@@ -23,7 +23,7 @@ Constraints:
 -109 <= nums[i] <= 109
 -109 <= target <= 109
 Only one valid answer exists.
-'''
+"""
 
 
 def two_sum(nums: list, target: int) -> list:
@@ -32,7 +32,7 @@ def two_sum(nums: list, target: int) -> list:
     for index, num in enumerate(nums):
         needed_value = target - num
 
-        if needed_value in tested_values.keys():
+        if needed_value in tested_values:
             return [tested_values[needed_value], index]
 
         tested_values[num] = index
