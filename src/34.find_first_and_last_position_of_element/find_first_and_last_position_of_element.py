@@ -14,8 +14,13 @@ class Solution:
         return [-1, -1]
 
 
+# Time  -> O(log(n))
+# Space -> O(1)
 class Solution2:
     def search_range(self, nums: List[int], target: int) -> List[int]:
+        if len(nums) == 0 or nums[0] > target or nums[-1] < target:
+            return [-1, -1]
+
         start = self.search_start(nums, target)
         end = self.search_end(nums, target)
         return [start, end]
