@@ -1,5 +1,5 @@
 import pytest
-from search_range import Solution
+from find_first_and_last_position_of_element import Solution2
 
 
 @pytest.mark.parametrize(
@@ -10,6 +10,6 @@ from search_range import Solution
         ([], 0, [-1, -1]),
     ],
 )
-def test_search_range(nums, target, expected):
-    solution = Solution()
+def test_find_first_and_last_position_of_element(nums, target, expected):
+    solution = Solution2()
     assert expected == solution.search_range(nums, target)
